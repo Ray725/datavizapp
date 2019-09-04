@@ -27,6 +27,8 @@ function draw() {
   line(hour_x, 0, hour_x, hour_height);
   line(hour_x + square_size, 0, hour_x + square_size, hour_height);
 
+  triangle(hour_x, 600, hour_x + square_size, 600, hour_x + square_size/2, hour_height + square_size);
+
   // minute
   let minute_x = 2 * spacer + square_size;
 
@@ -35,6 +37,8 @@ function draw() {
   line(minute_x, 0, minute_x, minute_height);
   line(minute_x + square_size, 0, minute_x + square_size, minute_height);
 
+  triangle(minute_x, 600, minute_x + square_size, 600, minute_x + square_size/2, minute_height + square_size);
+
   // second
   let second_x = 3 * spacer + 2 * square_size;
 
@@ -42,4 +46,6 @@ function draw() {
   rect(3 * spacer + 2 * square_size, second_height, square_size, square_size);
   line(second_x, 0, second_x, second_height);
   line(second_x + square_size, 0, second_x + square_size, second_height);
+
+  triangle(second_x, 600, second_x + square_size, 600, second_x + square_size/2, second_height + square_size);
 }
